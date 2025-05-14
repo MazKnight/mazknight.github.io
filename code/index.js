@@ -5,6 +5,7 @@ const tabbyPacID = 133874906;
 const accessToken = "vczc3lg13rbkxxif4umiv4z1skcji9";
 const clientId = "kmw7r66tr2hfg0drht2u5ve0pbhuvn";
 const url = "https://api.twitch.tv/helix/search/channels?query=tabbypac&live_only=true&first=1";
+const parent = "mazknight.github.io"
 
 async function fetchVideos() {
     try {
@@ -109,7 +110,7 @@ async function getLiveStatus() {
         var player = document.getElementById("player")
 
         player.setAttribute("allow", ``)
-        player.setAttribute("src", `"https://player.twitch.tv/?tabbypac&parent=mazgamer1.github.io"`)
+        player.setAttribute("src", `https://player.twitch.tv/?tabbypac&parent=${parent}`)
         player.setAttribute("title", `Twitch video player`)
         player.setAttribute("width", "400")
     }
