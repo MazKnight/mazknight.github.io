@@ -24,24 +24,8 @@
             width="400px"
             allowfullscreen>
         </iframe> -->
-        <div id="player"></div>
+        <div id="twitchPlayer"></div>
         <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-        <script type="text/javascript">
-
-        var width = (window.innerWidth / 100) * 40
-        var height = (window.innerHeight / 100) * 40
-        console.log(width)
-        console.log(height)
-        
-        var options = {
-            width: width,
-            height: height,
-            channel: "astralspiff",
-        };
-        var player = new Twitch.Player("player", options);
-        player.setVolume(0.5);
-            
-        </script>
     </div>
 </body>
 </html>
