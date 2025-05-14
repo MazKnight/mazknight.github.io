@@ -108,7 +108,7 @@ async function getLiveStatus() {
     
     
     var result = await res.json()
-    if (result["data"]["0"]["id"] == tabbyPacID || true) {
+    if (result["data"]["0"]["id"] == tabbyPacID) {
 
         var player = document.getElementById("player")
         player.remove()
