@@ -116,7 +116,7 @@ async function getLiveStatus() {
     }
 }
 
-getLiveStatus()
+// getLiveStatus()
 
 var temp = {"access_token":"vczc3lg13rbkxxif4umiv4z1skcji9","expires_in":5449226,"token_type":"bearer"};
 
