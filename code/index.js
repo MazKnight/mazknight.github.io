@@ -119,7 +119,7 @@ async function getLiveStatus() {
         var options = {
             width: width,
             height: height,
-            channel: "tabbypac",
+            channel: "astralspiff",
         };
         var player = new Twitch.Player("twitchPlayer", options);
         player.setVolume(0.5);
