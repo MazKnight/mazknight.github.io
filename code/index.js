@@ -105,14 +105,25 @@ async function getLiveStatus() {
     }
     })
 
+    
+    
     var result = await res.json()
     if (result["data"]["0"]["id"] == tabbyPacID || true) {
-        var player = document.getElementById("player")
 
-        player.setAttribute("allow", ``)
-        player.setAttribute("src", `https://player.twitch.tv/?tabbypac&parent=${parent}`)
-        player.setAttribute("title", `Twitch video player`)
-        player.setAttribute("width", "400")
+        var player = document.getElementById("player")
+        player.remove()
+        
+        var width = (window.innerWidth / 100) * 40
+        var height = (window.innerHeight / 100) * 40
+        
+        var options = {
+            width: width,
+            height: height,
+            channel: "astralspiff",
+        };
+        var player = new Twitch.Player("twitchPlayer", options);
+        player.setVolume(0.5);
+        player.setMuted(false);
     }
 }
 
