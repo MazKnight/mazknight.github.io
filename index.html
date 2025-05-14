@@ -17,13 +17,23 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
         </iframe> -->
-        <iframe
+        <!-- <iframe
             id = "player"
             src="https://player.twitch.tv/?channel=AstralSpiff&parent=mazgamer1.github.io"
             height="400px"
             width="400px"
             allowfullscreen>
-        </iframe>
+        </iframe> -->
+        <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+        <script type="text/javascript">
+          var options = {
+            width: 400,
+            height: 400,
+            channel: "astralspiff",
+          };
+          var player = new Twitch.Player("player", options);
+          player.setVolume(0.5);
+        </script>
     </div>
 </body>
 </html>
