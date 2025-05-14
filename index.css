@@ -1,0 +1,13 @@
+#center {
+    background-color: aqua;
+    width: 40vw;
+    height: 40vh;
+    position: relative;
+    left: 30vw;
+    top: 30vh;
+}
+
+#player {
+    width: 40vw;
+    height: 40vh;
+}
