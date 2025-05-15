@@ -1,13 +1,13 @@
 #center {
     background-color: aqua;
-    width: 40vw;
+    width: calc(((40vh / 16) * 9));
     height: 40vh;
     position: relative;
-    left: 30vw;
+    left: calc(50vw - ((40vh / 16) * 9) / 2);
     top: 30vh;
 }
 
 #player {
-    width: 40vw;
+    width: calc(((40vh / 16) * 9));
     height: 40vh;
 }
